@@ -753,7 +753,7 @@ Persistent<FunctionTemplate> Key::s_ct;
 extern "C" void
 init (Handle<Object> target)
 {
-  monetaryunit::Key::Init(target);
+  bitcoin::Key::Init(target);
 }
 
 NODE_MODULE(KeyModule, init)
