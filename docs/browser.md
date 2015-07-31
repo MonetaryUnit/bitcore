@@ -88,7 +88,7 @@ var PublicKey = bitcore.PublicKey;
 var Address = bitcore.Address;
 ```
 
-See the [main file](https://github.com/bitpay/bitcore/blob/master/index.js) for bitcore for a complete list, as well as the [Bitcore Documentation](index.md).
+See the [main file](https://github.com/MonetaryUnit/bitcore/blob/master/index.js) for bitcore for a complete list, as well as the [Bitcore Documentation](index.md).
 
 **Step 2**: Browserifying
 
