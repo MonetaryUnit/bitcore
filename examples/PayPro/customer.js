@@ -263,20 +263,20 @@ function sendPayment(msg, callback) {
 
 // URI Spec
 // A backwards-compatible request:
-// bitcoin:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe
+// monetaryunit:mq7se9wy2egettFxPbmn99cK8v5AFq55Lx?amount=0.11&r=https://merchant.com/pay.php?h%3D2a8628fc2fbe
 // Non-backwards-compatible equivalent:
-// bitcoin:?r=https://merchant.com/pay.php?h%3D2a8628fc2fbe
+// monetaryunit:?r=https://merchant.com/pay.php?h%3D2a8628fc2fbe
 function parseMerchantURI(uri) {
-  uri = uri || 'bitcoin:?r=https://localhost:' + port + '/-/request';
+  uri = uri || 'monetaryunit:?r=https://localhost:' + port + '/-/request';
   var query, id;
-  if (uri.indexOf('bitcoin:') !== 0) {
+  if (uri.indexOf('monetaryunit:') !== 0) {
     throw new Error('Not a Bitcoin URI.');
   }
   if (~uri.indexOf(':?')) {
     query = uri.split(':?')[1];
   } else {
     // Legacy URI
-    uri = uri.substring('bitcoin:'.length);
+    uri = uri.substring('monetaryunit:'.length);
     uri = uri.split('?');
     id = uri[0];
     query = uri[1];
