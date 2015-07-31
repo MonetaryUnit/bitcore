@@ -164,7 +164,7 @@ describe('ECDSA', function() {
       var ecdsa = new ECDSA();
       ecdsa.hashbuf = Hash.sha256(new Buffer('test'));
       var pk = Pubkey.fromDER(new Buffer('041ff0fe0f7b15ffaa85ff9f4744d539139c252a49' +
-        '710fb053bb9f2b933173ff9a7baad41d04514751e6851f5304fd243751703bed21b914f6be218c0fa354a341', 'hex'));
+        '710fb053bb9f2b933173ff9a4a33ecbb5cc565d0f63737a821670a3a215083cd3af7527d31fc5c95e3d5cb7b', 'hex'));
       ecdsa.pubkey = pk;
       ecdsa.sig = new Signature();
       ecdsa.sig.r = new BN(0);

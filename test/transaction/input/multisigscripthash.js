@@ -15,16 +15,16 @@ var MultiSigScriptHashInput = bitcore.Transaction.Input.MultiSigScriptHash;
 
 describe('MultiSigScriptHashInput', function() {
 
-  var privateKey1 = new PrivateKey('KwF9LjRraetZuEjR8VqEq539z137LW5anYDUnVK11vM3mNMHTWb4');
-  var privateKey2 = new PrivateKey('L4PqnaPTCkYhAqH3YQmefjxQP6zRcF4EJbdGqR8v6adtG9XSsadY');
-  var privateKey3 = new PrivateKey('L4CTX79zFeksZTyyoFuPQAySfmP7fL3R41gWKTuepuN7hxuNuJwV');
+  var privateKey1 = new PrivateKey('NAzLVQbEYqNqaJE8BW1QPCXQinFESCH62kBbK1N48R6m1kCng6Lp');
+  var privateKey2 = new PrivateKey('NDUNcjtfXgv2Az96EtL8XHi62ZCvPi72BNkurC1dc269Tt5CueJn');
+  var privateKey3 = new PrivateKey('NA2EFLEvr9jV68pumG4weasDwFXdKmw4AhBjGUb1YJ4ZQHCUFjHL');
   var public1 = privateKey1.publicKey;
   var public2 = privateKey2.publicKey;
   var public3 = privateKey3.publicKey;
-  var address = new Address('33zbk2aSZYdNbRsMPPt6jgy6Kq1kQreqeb');
+  var address = new Address('4xVMEBghsLWoWCBFHRj6QF8tw89Xu74gXJ');
 
   var output = {
-    address: '33zbk2aSZYdNbRsMPPt6jgy6Kq1kQreqeb',
+    address: '4xVMEBghsLWoWCBFHRj6QF8tw89Xu74gXJ',
     txId: '66e64ef8a3b384164b78453fa8c8194de9a473ba14f89485a0e433699daec140',
     outputIndex: 0,
     script: new Script(address),
